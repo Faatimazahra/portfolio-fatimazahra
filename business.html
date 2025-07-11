@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails du Portfolio</title>
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Back Button -->
+  <div class="container mt-3">
+    <a href="index.html" class="btn btn-secondary">&larr; Retour</a>
+  </div>
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section mt-4">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/business.png" alt="Analyse SWOT et Objectifs SMART">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Informations du Projet</h3>
+            <ul>
+              <li><strong>Catégorie</strong>: Analyse stratégique</li>
+              <li><strong>Outils</strong>: Méthodes SWOT & SMART</li>
+              <li><strong>Objectif</strong>: Développement & amélioration des performances</li>
+            </ul>
+          </div>
+          <div class="portfolio-description mt-3">
+            <h2>Analyse Business avec SWOT et SMART</h2>
+            <p>
+              Dans mes projets, j’intègre des outils d’analyse stratégique comme la méthode <strong>SWOT</strong> (Forces, Faiblesses, Opportunités, Menaces) pour identifier clairement la position actuelle d’une entreprise ou d’un projet.
+            </p>
+            <p>
+              Ensuite, je définis des <strong>objectifs SMART</strong> (Spécifiques, Mesurables, Atteignables, Réalistes et Temporels) pour structurer une feuille de route claire, motivante et réaliste.
+            </p>
+            <p>
+              Cette approche permet de mieux orienter les actions, d’améliorer les résultats et de transformer les idées en projets concrets et évolutifs.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000
+      },
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    });
+  </script>
+
+</body>
+
+</html>
