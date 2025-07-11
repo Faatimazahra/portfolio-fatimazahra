@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails du Portfolio</title>
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Back Button -->
+  <div class="container mt-3">
+    <a href="index.html" class="btn btn-secondary">&larr; Retour</a>
+  </div>
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section mt-4">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/check.gif" alt="Application Web">
+              </div>
+              
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Informations du Projet</h3>
+            <ul>
+              <li><strong>Catégorie</strong>: Outil de détection de contenu</li>
+              <li><strong>Client</strong>: Projet personnel</li>
+              
+              <li><strong>URL du projet</strong>: <a href="https://faatimazahra.github.io/Check/">www.detection.com</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description mt-3">
+            <h2>Interface de détection de mots interdits (avec 4DBC)</h2>
+            <p>
+              En tant que content manager, j'étais confronté au problème de devoir vérifier manuellement les articles pour y détecter des mots interdits. Pour résoudre ce problème, j'ai conçu un outil simple où l'on peut coller un article complet et lancer la vérification d'un simple clic.
+            </p>
+            <p>
+              Cela permet de gagner un temps précieux et d'éviter les erreurs humaines. L'outil signale automatiquement les mots non autorisés, ce qui facilite grandement la gestion de contenu.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000
+      },
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    });
+  </script>
+
+</body>
+
+</html>

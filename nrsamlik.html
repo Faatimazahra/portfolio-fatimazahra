@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails du Portfolio</title>
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Back Button -->
+  <div class="container mt-3">
+    <a href="index.html" class="btn btn-secondary">&larr; Retour</a>
+  </div>
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section mt-4">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/nrsamlik.png" alt="Vidéo Fun">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio-info">
+            <h3>Informations du Projet</h3>
+            <ul>
+              <li><strong>Catégorie</strong>: Création de contenu vidéo</li>
+              <li><strong>Projet</strong>: Développement d'une communauté en ligne</li>
+              <li><strong>Page Instagram</strong>: <a href="https://instagram.com/nrsam.lik" target="_blank">@nrsam.lik</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description mt-3">
+            <h2>Vidéos Fun pour Connecter avec la Communauté</h2>
+            <p>
+              Parce que le rire rassemble, j’ai commencé à créer des vidéos drôles et créatives pour fédérer une communauté autour de la bonne humeur. L’objectif est simple : faire sourire, faire réagir, et surtout créer du lien.
+            </p>
+            <p>
+              Chaque vidéo est pensée pour capter l’attention en quelques secondes, avec un ton léger, des situations de la vie quotidienne (mais en mode "what just happened?!") et une touche d’autodérision.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      speed: 600,
+      autoplay: {
+        delay: 5000
+      },
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true
+      }
+    });
+  </script>
+
+</body>
+
+</html>
